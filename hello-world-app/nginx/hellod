@@ -1,0 +1,18 @@
+server {
+        listen      80;
+        server_name sample-app.com;
+        charset     utf-8;
+        access_log  /var/log/nginx/sample-app-access.log;
+        error_log   /var/log/nginx/sample-app-error.log;
+        client_max_body_size 75M;
+        location /media  {
+                alias /home/thais/cristiano/git/cristnascimento/django-project/weather/media;
+        }
+        location /static {
+                alias /home/thais/cristiano/git/cristnascimento/django-project/weather/static;
+        }
+        location / {
+                include proxy_params;
+                proxy_pass http://unix:/home/thais/cristiano/git/cristnascimento/django-project/hellod-app.sock;
+        }
+}
