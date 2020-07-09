@@ -26,7 +26,7 @@ $ python3 -m pip install Django
 $ python3 -m django --version
 $ django-admin startproject mysite
 $ cd mysite
-$ django-admin startproject mysite
+$ python manage.py runserver
 $ curl 127.0.0.1:8000
 ```
 
