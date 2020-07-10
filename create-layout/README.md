@@ -171,7 +171,7 @@ run the server
 $ python3 manage.py runserver
 ```
 
-Check it out [http://localhost:8000/hello](http://localhost:8000/hello){target="\_blank"}
+Check it out [http://localhost:8000/hello](http://localhost:8000/hello){:target="\_blank"}
 
 ## Learn More
 
@@ -179,4 +179,5 @@ Congratulations! You have finished this tutorial.
 
 Continue improving your skills by reading:
 
-* [Django Getting Started](https://docs.djangoproject.com/en/3.0/intro){target="\_blank"}
+* [Django Getting Started](https://docs.djangoproject.com/en/3.0/intro){:target="\_blank"}
+* [Template Extending in DjangoGirls](https://tutorial.djangogirls.org/pt/template_extending/){:target="\_blank"}
