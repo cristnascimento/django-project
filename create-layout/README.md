@@ -37,10 +37,9 @@ urlpatterns = [
 from django.shortcuts import render
 
 # ...
-def detail(request, question_id):
-	obj = {'name': 'john'}
+def index(request):
+    data = {'name': 'john'}
     return render(request, 'hello/hello.html', data )
-
 ```
 
 
@@ -139,23 +138,23 @@ TEMPLATES = [
 
 ```
 django_workspace/
-	ENV/
-	layout_project/
-		layout_project/
-		hello/
-		    __init__.py
-		    admin.py
-		    apps.py
-		    migrations/
-		        __init__.py
-		    models.py
-		    templates/
-		    	hello/
-		    		base.html
-		    		hello.html
-		    tests.py
-		    views.py
-		manage.py	 
+    ENV/
+    layout_project/
+        layout_project/
+        hello/
+            __init__.py
+            admin.py
+            apps.py
+            migrations/
+                __init__.py
+            models.py
+            templates/
+                hello/
+                    base.html
+                    hello.html
+            tests.py
+        views.py
+        manage.py	 
 ```
 ## Try
 
@@ -171,7 +170,7 @@ run the server
 $ python3 manage.py runserver
 ```
 
-Check it out [http://localhost:8000/hello](http://localhost:8000/hello){:target="\_blank"}
+Check it out [http://localhost:8000/hello](http://localhost:8000/hello)
 
 ## Learn More
 
@@ -179,5 +178,5 @@ Congratulations! You have finished this tutorial.
 
 Continue improving your skills by reading:
 
-* [Django Getting Started](https://docs.djangoproject.com/en/3.0/intro){:target="\_blank"}
-* [Template Extending in DjangoGirls](https://tutorial.djangogirls.org/pt/template_extending/){:target="\_blank"}
+* [Django Getting Started](https://docs.djangoproject.com/en/3.0/intro)
+* [Template Extending in DjangoGirls](https://tutorial.djangogirls.org/pt/template_extending/)
